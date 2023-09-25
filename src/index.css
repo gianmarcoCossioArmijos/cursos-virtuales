@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .home-background {
+        background-image: url("./assets/background-bikut.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .informatica-background {
+        background-image: url("./assets/informatica.png");
+        background-size: cover;
+    }
+
+    .programacion-background {
+        background-image: url("./assets/programacion.png");
+        background-size: cover;
+    }
+
+    .diseño-background {
+        background-image: url("./assets/diseño-grafico.png");
+        background-size: cover;
+    }
+
+    .open {
+        width: 100%;
+    }
+
+    .close {
+        width: 0;
+        height: 0;
+    }
+}
