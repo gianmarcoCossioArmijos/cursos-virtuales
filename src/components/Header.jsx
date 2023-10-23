@@ -50,10 +50,8 @@ const Header = () => {
   const handleClick = () => {
 
     if (menu === "open") {
-        
         dispatch(hidde());
     } else {
-        
         dispatch(show());
     }
   }

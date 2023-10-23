@@ -92,7 +92,7 @@ const Login = () => {
                     value={usuario.clave}
                     onChange={handleChange}
                     className='p-2 rounded-md text-black'
-                    placeholder='Ingresa tu DNI'
+                    placeholder='Ingresa tu Contraseña'
                     required/>
             </label>
 
