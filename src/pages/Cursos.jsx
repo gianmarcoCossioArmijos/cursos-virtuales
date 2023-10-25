@@ -21,7 +21,7 @@ const Cursos = () => {
 
   const handleClick = (curso) => {
 
-    const number = "910 020 072";
+    const number = "51 910 020 072";
     const mensaje = encodeURIComponent(`¡Hola!👋 estoy estoy interesado, en el curso 👉 ${curso}`);
     const url = `https://api.whatsapp.com/send?phone=${number}&text=${mensaje}`;
     window.open(url, "_blank");

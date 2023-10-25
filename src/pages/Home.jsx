@@ -16,7 +16,7 @@ const Home = () => {
 
             <div className='w-full md:w-2/5 md:m-auto py-10 flex flex-col gap-4'>
                 <h2 className='text-5xl text-center animate-fade-down animate-ease-linear'>
-                    Unuimagta ashi juu <strong className='text-yellow-500'>nugka jui takat ainanunu</strong>
+                umigkata juju <strong className='text-yellow-500'>nugkanum unuimamain awanunu</strong>
                 </h2>
 
                 <h2 className='text-3xl text-center'>

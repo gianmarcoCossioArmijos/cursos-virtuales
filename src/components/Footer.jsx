@@ -15,12 +15,12 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-2 self-center'>
-          <span>example@contact.com</span>
+          <span>ugkum18@gmail.com</span>
         </div>
 
       </div>
 
-      <h3 className='m-auto'>Derechos reservados - 2023</h3>
+      <h3 className='m-auto'>Derechos reservados - BIKUT 2023</h3>
     
     </footer>
   )

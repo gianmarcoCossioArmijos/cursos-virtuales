@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { CgMenuGridR } from "react-icons/cg";
+import { TfiMenu } from "react-icons/tfi";
 
 import { useDispatch, useSelector  } from "react-redux"
 import { useUsuarios } from '../hooks/useUsuarios.js'
@@ -59,11 +59,11 @@ const Header = () => {
   return (
     <header className='w-full h-20 px-2 flex justify-between bg-black/50'>
 
-        <div className='h-full flex gap-2'>
+        <div className='h-full flex gap-3'>
 
-            <CgMenuGridR
+            <TfiMenu
                   onClick={handleClick}
-                  className='w-9 h-9 m-auto hover:bg-white/10 rounded-md'/>
+                  className='w-9 h-9 m-auto p-1 hover:bg-white/10 rounded-md'/>
 
             <img
                 src="https://i.postimg.cc/pXyvPrSd/bikut.png"
