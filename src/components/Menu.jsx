@@ -12,19 +12,19 @@ const Menu = () => {
 
         <Link
             to="/"
-            className='px-6 pt-20'>
+            className='w-[170px] h-fit p-3 mt-20 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
           Inicio
         </Link>
 
         <Link
             to="/cursos"
-            className='px-6'>
+            className='w-[170px] h-fit p-3 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
           Cursos
         </Link>
 
         <Link
             to="/registrar"
-            className='px-6 pb-20'>
+            className='w-[170px] h-fit p-3 mb-20 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
           Registrarme
         </Link>
 

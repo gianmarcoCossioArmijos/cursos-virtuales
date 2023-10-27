@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { toast } from 'sonner';
 import { useUsuarios } from '../hooks/useUsuarios.js'
 import { useNavigate } from 'react-router-dom';
+
+import { useDispatch } from "react-redux"
+import { hidde } from '../store/menuSlice.js'
 
 const Registro = () => {
     const [ usuario, setUsuario ] = useState({
@@ -22,6 +25,12 @@ const Registro = () => {
 
     const { crearUsuario } = useUsuarios();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+ 
+        dispatch(hidde());
+      }, [])
 
     const handleChange = (event) => {
 

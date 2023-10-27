@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
+import { useDispatch } from "react-redux"
+import { hidde } from '../store/menuSlice.js'
+
 import { useCursos } from '../hooks/useCursos.js'
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -9,6 +12,7 @@ const Cursos = () => {
   const [ list, setList ] = useState([]);
 
   const { reportarCursos } = useCursos();
+  const dispatch = useDispatch();
 
   useEffect(() => {
 
@@ -17,6 +21,8 @@ const Cursos = () => {
         setCursos(cursos);
         setList(cursos);
       });
+
+    dispatch(hidde());
   }, [])
 
   const handleClick = (curso) => {

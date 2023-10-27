@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Link } from 'react-router-dom'
+import { useDispatch } from "react-redux"
+import { hidde } from '../store/menuSlice.js'
 
 const Home = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+ 
+    dispatch(hidde());
+  }, [])
 
   return (
     <main className='w-full'>

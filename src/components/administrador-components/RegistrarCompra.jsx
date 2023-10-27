@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 
 import { useCursos } from '../../hooks/useCursos'
 import { useUsuarios } from '../../hooks/useUsuarios.js'
+import { Link } from 'react-router-dom';
+
+import { ImArrowLeft } from "react-icons/im";
 import { toast } from 'sonner';
 
 const RegistrarCompra = () => {
@@ -67,6 +70,12 @@ const RegistrarCompra = () => {
   return (
     <section className='w-full min-h-screen p-6 flex flex-col gap-4 bg-gradient-to-b from-black/0 to-black/40'>
 
+        <Link
+            to="/menu"
+            className='w-[100px] p-2 flex justify-center rounded-md bg-white/10'>
+          <ImArrowLeft />
+        </Link>
+        
         <h5 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto text-xl'>Buscar usuario por DNI</h5>
 
         <form

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
-import { toast } from 'sonner';
 import { useUsuarios } from '../../hooks/useUsuarios.js'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+import { toast } from 'sonner';
+import { ImArrowLeft } from "react-icons/im";
 
 const NuevoAdministrador = () => {
     const [ usuario, setUsuario ] = useState({
@@ -12,7 +14,7 @@ const NuevoAdministrador = () => {
         clave: "",
         nacimiento: "",
         email: "",
-        rol: "administrador",
+        rol: "",
         sesion: crypto.randomUUID(),
         cursos:
             {
@@ -45,7 +47,7 @@ const NuevoAdministrador = () => {
                 clave: "",
                 nacimiento: "",
                 email: "",
-                rol: "administrador",
+                rol: "",
                 sesion: crypto.randomUUID(),
                 cursos:
                     {
@@ -61,7 +63,7 @@ const NuevoAdministrador = () => {
                 clave: "",
                 nacimiento: "",
                 email: "",
-                rol: "administrador",
+                rol: "",
                 sesion: crypto.randomUUID(),
                 cursos:
                     {
@@ -70,14 +72,20 @@ const NuevoAdministrador = () => {
             })
             
             navigate("/menu");
-            toast("Administrador registrado exitosamente");
+            toast("Administrador o Docente registrado exitosamente");
         }
     }
 
   return (
     <div className='w-full min-h-screen p-6 flex flex-col gap-4 bg-gradient-to-b from-black/0 to-black/40'>
 
-        <h5 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto text-xl'>Registrar Curso</h5>
+        <Link
+            to="/menu"
+            className='w-[100px] p-2 flex justify-center rounded-md bg-white/10'>
+          <ImArrowLeft />
+        </Link>
+
+        <h5 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto text-xl'>Registrar nuevo Docente o Administrador</h5>
 
         <form
             onSubmit={handleSubmit}
@@ -153,6 +161,20 @@ const NuevoAdministrador = () => {
                     className='p-2 rounded-md text-black'
                     placeholder='Ingresa tu correo electronico'
                     required/>
+            </label>
+
+            <label className='flex flex-col gap-1'>
+                Tipo de Usuario
+                <select
+                    name="rol"
+                    className='p-2 rounded-md text-black'
+                    value={usuario?.rol}
+                    onChange={handleChange}
+                    required>
+                    <option value="">Seleccionar</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="docente">Docente</option>
+                </select>
             </label>
 
             <input

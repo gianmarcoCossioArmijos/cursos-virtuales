@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
+import { Link } from 'react-router-dom';
 import { useCursos } from '../../hooks/useCursos.js'
+
 import { FaDeleteLeft } from "react-icons/fa6";
 import { toast } from 'sonner';
+import { ImArrowLeft } from "react-icons/im";
 
 const PrecioCursos = () => {
   const [ cursos, setCursos ] = useState([]);
@@ -32,6 +35,12 @@ const PrecioCursos = () => {
   return (
     <section className='w-full min-h-screen px-6 pt-6 pb-20 flex flex-col gap-4 bg-gradient-to-b from-black/0 to-black/40'>
 
+        <Link
+            to="/menu"
+            className='w-[100px] p-2 flex justify-center rounded-md bg-white/10'>
+          <ImArrowLeft />
+        </Link>
+        
         <h5 className='w-full md:w-2/3 lg:w-3/5 md:mx-auto text-xl'>Precios por Curso</h5>
 
         <div className='w-full md:w-2/3 lg:w-3/5 md:mx-auto p-3 flex flex-col justify-between rounded-md bg-white/10 border shadow-lg'>

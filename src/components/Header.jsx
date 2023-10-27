@@ -39,7 +39,6 @@ const Header = () => {
       verificarUsuario(dni);
       setIsAuth("true")
     }
-
   }, [])
 
   useEffect(() => {

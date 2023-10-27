@@ -17,6 +17,9 @@ import NuevoCurso from '../components/administrador-components/NuevoCurso'
 import PrecioCursos from '../components/administrador-components/PrecioCursos'
 import NuevoAdministrador from '../components/administrador-components/NuevoAdministrador'
 import ListaAdministradores from '../components/administrador-components/ListaAdministradores'
+import ListaUsuarios from '../components/administrador-components/ListaUsuarios.jsx'
+import ListaDocentes from '../components/administrador-components/ListaDocentes.jsx'
+import CambiarClave from '../components/administrador-components/CambiarClave.jsx'
 
 const Router = () => {
   return (
@@ -40,6 +43,9 @@ const Router = () => {
                       <Route path='/lista-precios' element={ <PrecioCursos/> }/>
                       <Route path='/registrar-administrador' element={ <NuevoAdministrador/> }/>
                       <Route path='/lista-administradores' element={ <ListaAdministradores/> }/>
+                      <Route path='/lista-usuarios' element={ <ListaUsuarios/> }/>
+                      <Route path='/lista-docentes' element={ <ListaDocentes/> }/>
+                      <Route path='/cambiar-clave' element={ <CambiarClave/> }/>
 
                     </Route>
 

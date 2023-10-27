@@ -191,6 +191,21 @@ export const useUsuarios = () => {
         }
     }
 
+    const cambiarClave = async(id) => {
+         
+        try {
+            
+            const ref = doc(reference, id);
+            const nuevaClave = crypto.randomUUID()
+            await updateDoc(ref, {clave : nuevaClave});
+
+            return nuevaClave;
+        } catch (error) {
+
+            console.log(error);
+        }
+    }
+
     return {
         crearUsuario,
         iniciarSesion,
@@ -199,6 +214,7 @@ export const useUsuarios = () => {
         buscarUsuario,
         reportarUsuarios,
         eliminarUsuario,
-        registrarCompra
+        registrarCompra,
+        cambiarClave
     }
 }

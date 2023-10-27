@@ -1,5 +1,7 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+
+import { ImArrowLeft } from "react-icons/im";
 
 const Reproductor = () => {
   const { link } = useParams();
@@ -8,6 +10,12 @@ const Reproductor = () => {
     <main className='w-full h-screen bg-gradient-to-b from-black/0 to-black/40'>
 
         <article className='w-full p-6 flex flex-col gap-6 justify-center'>
+
+          <Link
+              to="/menu"
+              className='w-[100px] p-2 flex justify-center rounded-md bg-white/10'>
+            <ImArrowLeft />
+          </Link>
 
             <iframe
                 className='w-full h-[400px] md:h-screen'

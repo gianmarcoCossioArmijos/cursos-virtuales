@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { BsPlayBtnFill } from "react-icons/bs";
 import MenuAdministracion from '../components/administrador-components/MenuAdministracion.jsx';
+import MenuDocente from '../components/administrador-components/MenuDocente.jsx';
 
 const MisCursos = () => {
     const [ cursos, setCursos ] = useState([]);
@@ -29,6 +30,8 @@ const MisCursos = () => {
     <div className='w-full min-h-screen p-6 flex flex-col gap-6 bg-gradient-to-b from-black/0 to-black/40'>
 
         {rol === "administrador" ? <MenuAdministracion /> : ""}
+
+        {rol === "docente" ? <MenuDocente /> : ""}
 
         <article className='w-full md:w-2/3 lg:w-3/5 md:mx-auto flex flex-col gap-6 justify-center'>
 

@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 
 import { useCursos } from '../../hooks/useCursos.js'
+import { Link } from 'react-router-dom';
+
 import { toast } from 'sonner';
+import { ImArrowLeft } from "react-icons/im";
 
 const NuevoCurso = () => {
   const [ curso, setCurso ] = useState({
@@ -48,6 +51,12 @@ const NuevoCurso = () => {
   return (
     <section className='w-full min-h-screen p-6 flex flex-col gap-4 bg-gradient-to-b from-black/0 to-black/40'>
 
+        <Link
+            to="/menu"
+            className='w-[100px] p-2 flex justify-center rounded-md bg-white/10'>
+          <ImArrowLeft />
+        </Link>
+        
         <h5 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto text-xl'>Registrar Curso</h5>
 
         <form

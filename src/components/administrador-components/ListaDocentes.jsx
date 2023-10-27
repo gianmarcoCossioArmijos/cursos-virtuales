@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-import { useUsuarios } from '../../hooks/useUsuarios.js'
 import { Link } from 'react-router-dom';
+import { useUsuarios } from '../../hooks/useUsuarios.js'
 
-import { ImArrowLeft } from "react-icons/im";
 import { FaDeleteLeft } from "react-icons/fa6";
+import { ImArrowLeft } from "react-icons/im";
 import { toast } from 'sonner';
 
-const ListaAdministradores = () => {
+const ListaDocentes = () => {
   const [ usuarios, setUsuarios ] = useState([]);
 
   const { reportarUsuarios } = useUsuarios();
@@ -18,7 +18,7 @@ const ListaAdministradores = () => {
     reportarUsuarios()
       .then(usuarios => {
 
-        const nuevosUsuarios = usuarios.filter((usuario) => usuario.rol.toLowerCase().includes("administrador") === true);
+        const nuevosUsuarios = usuarios.filter((usuario) => usuario.rol.toLowerCase().includes("docente") === true);
         setUsuarios(nuevosUsuarios);
       });
   }, [])
@@ -29,11 +29,11 @@ const ListaAdministradores = () => {
 
     if (response === "true") {
 
-        toast("Administrador eliminado exitosamente");
+        toast("Docente eliminado exitosamente");
         reportarUsuarios()
             .then(usuarios => {
 
-                const nuevosUsuarios = usuarios.filter((usuario) => usuario.rol.toLowerCase().includes("administrador") === true);
+                const nuevosUsuarios = usuarios.filter((usuario) => usuario.rol.toLowerCase().includes("docente") === true);
                 setUsuarios(nuevosUsuarios);
             });
     }
@@ -48,7 +48,7 @@ const ListaAdministradores = () => {
           <ImArrowLeft />
         </Link>
         
-        <h5 className='w-full md:w-2/3 lg:w-3/5 md:mx-auto text-xl'>Lista de Administradores</h5>
+        <h5 className='w-full md:w-2/3 lg:w-3/5 md:mx-auto text-xl'>Lista de Docentes</h5>
 
         <div className='w-full md:w-2/3 lg:w-3/5 md:mx-auto p-3 flex flex-col justify-between rounded-md bg-white/10 border shadow-lg'>
             {usuarios.map(usuario => {
@@ -73,4 +73,4 @@ const ListaAdministradores = () => {
   )
 }
 
-export default ListaAdministradores
+export default ListaDocentes
