@@ -7,7 +7,7 @@ const Reproductor = () => {
   const { link } = useParams();
 
   return (
-    <main className='w-full h-screen bg-gradient-to-b from-black/0 to-black/40'>
+    <main className='w-full min-h-screen bg-gradient-to-b from-black/0 to-black/40'>
 
         <article className='w-full p-6 flex flex-col gap-6 justify-center'>
 

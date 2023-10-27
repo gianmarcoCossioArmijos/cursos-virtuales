@@ -63,8 +63,8 @@ const Cursos = () => {
                 return (
                     <div
                         key={curso.id}
-                        className='w-full md:w-[320px] lg:w-[300px] rounded-t-md shadow-lg'
-                    >
+                        className='w-full md:w-[320px] lg:w-[300px] rounded-t-md shadow-lg'>
+
                         <img
                             className='w-full h-[250px] object-cover rounded-t-md'
                             src={curso.imagen}
@@ -72,16 +72,16 @@ const Cursos = () => {
                         
                         <div className='w-full p-2 bg-white/5 rounded-b-md'>
 
-                            <h3 className='text-lg font-bold text-yellow-500'>{curso.curso}</h3>
+                            <h3 className='h-[30px] text-lg font-bold text-yellow-500 capitalize truncate overflow-hidden'>{curso.curso}</h3>
                             
-                            <div className='flex justify-between'>
-                                <span className='py-1 text-md'>{curso.docente}</span>
-                                <span className='p-1 text-sm border rounded-md'>{curso.nivel}</span>
+                            <div className='h-[32px] flex justify-between truncate overflow-hidden'>
+                                <span className='py-1 text-md capitalize'>{curso.docente}</span>
+                                <span className='p-1 text-sm border rounded-md lowercase'>{curso.nivel}</span>
                             </div>
 
-                            <span className='font-bold text-sm'>{curso.precio}</span>
+                            <p className='h-[20px] font-bold text-sm truncate overflow-hidden'>{curso.precio}</p>
 
-                            <p className='py-2 text-sm text-slate-400'>
+                            <p className='h-[80px] max-h-[80px] my-2 text-sm text-slate-400 overflow-hidden'>
                                 {curso.descripcion}
                             </p>
 

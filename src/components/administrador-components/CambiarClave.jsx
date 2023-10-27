@@ -79,14 +79,14 @@ const CambiarClave = () => {
 
         </form>
 
-        <h5 className='h-[50px] p-3 flex justify-center rounded-md bg-white/10'>
+        <h5 className='w-full h-[50px] md:w-2/3 lg:w-2/5 md:mx-auto p-3 flex justify-center rounded-md bg-white/10'>
             {clave}
         </h5>
 
         <button
             onClick={handleClickCambiarClave}
-            className='w-full h-fit p-3 flex justify-center gap-2 self-center rounded-md bg-yellow-600 hover:bg-yellow-500 font-bold'>
-            Cambiar Contraseña
+            className='w-full md:w-2/3 lg:w-2/5 md:mx-auto h-fit p-3 flex justify-center gap-2 self-center rounded-md bg-yellow-600 hover:bg-yellow-500 font-bold'>
+            Resetear Contraseña
         </button>
 
     </section>
