@@ -117,7 +117,7 @@ const RegistrarCompra = () => {
                     Seleccionar Curso
                 </option>
 
-                {opciones.map(curso => {
+                {opciones?.map(curso => {
                     return (
                         <option
                             key={curso.url}

@@ -59,7 +59,7 @@ const Cursos = () => {
                 onChange={handleChange}
                 className='w-full p-3 rounded-md shadow-md text-black'/>
 
-            {list.map(curso => {
+            {list?.map(curso => {
                 return (
                     <div
                         key={curso.id}

@@ -27,7 +27,7 @@ const Router = () => {
       <Provider store={store}>
         <BrowserRouter>
             <BaseLayout>
-                <Routes>
+              <Routes>
 
                     <Route path='/' element={ <Home/> }/>
                     <Route path='/cursos' element={ <Cursos/> }/>
@@ -49,7 +49,7 @@ const Router = () => {
 
                     </Route>
 
-                </Routes>
+              </Routes>
             </BaseLayout>
         </BrowserRouter>
         </Provider>

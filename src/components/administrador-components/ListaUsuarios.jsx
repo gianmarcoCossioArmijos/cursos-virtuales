@@ -51,7 +51,7 @@ const ListaUsuarios = () => {
         <h5 className='w-full md:w-2/3 lg:w-3/5 md:mx-auto text-xl'>Lista de Usuarios</h5>
 
         <div className='w-full md:w-2/3 lg:w-3/5 md:mx-auto p-3 flex flex-col justify-between rounded-md bg-white/10 border shadow-lg'>
-            {usuarios.map(usuario => {
+            {usuarios?.map(usuario => {
                 return (
                     <div key={usuario.id} className='py-1 flex justify-between text-md'>
 
