@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-
-import { useCursos } from '../hooks/useCursos.js'
 import { Link } from 'react-router-dom';
 
-import { BsPlayBtnFill } from "react-icons/bs";
+import { useCursos } from '../hooks/useCursos.js'
 import MenuAdministracion from '../components/administrador-components/MenuAdministracion.jsx';
 import MenuDocente from '../components/administrador-components/MenuDocente.jsx';
+
+import { BsPlayBtnFill } from "react-icons/bs";
+import { GoPasskeyFill } from "react-icons/go";
 
 const MisCursos = () => {
     const [ cursos, setCursos ] = useState([]);
@@ -32,6 +33,15 @@ const MisCursos = () => {
         {rol === "administrador" ? <MenuAdministracion /> : ""}
 
         {rol === "docente" ? <MenuDocente /> : ""}
+
+        <h3 className='w-full md:w-2/3 lg:w-3/5 md:mx-auto text-xl'>Cambiar mi Contraseña</h3>
+
+        <Link
+            to="/nueva-clave"
+            className='w-full md:w-2/3 lg:w-3/5 md:mx-auto p-3 flex justify-between gap-2 rounded-md bg-white/10 hover:bg-black/10 border shadow-lg'>
+            Cambiar mi Contraseña
+            <GoPasskeyFill className='self-center'/>
+        </Link>
 
         <article className='w-full md:w-2/3 lg:w-3/5 md:mx-auto flex flex-col gap-6 justify-center'>
 

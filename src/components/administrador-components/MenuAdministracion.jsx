@@ -54,7 +54,7 @@ const MenuAdministracion = () => {
         <Link
             to="/cambiar-clave"
             className='w-full md:w-2/3 lg:w-3/5 md:mx-auto p-3 flex justify-between gap-2 rounded-md bg-white/10 hover:bg-black/10 border shadow-lg'>
-            Cambiar Contraseña
+            Resetear Contraseñas
             <FaKey className='self-center'/>
         </Link>
         

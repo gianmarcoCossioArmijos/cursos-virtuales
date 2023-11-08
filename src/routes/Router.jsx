@@ -20,6 +20,7 @@ import ListaAdministradores from '../components/administrador-components/ListaAd
 import ListaUsuarios from '../components/administrador-components/ListaUsuarios.jsx'
 import ListaDocentes from '../components/administrador-components/ListaDocentes.jsx'
 import CambiarClave from '../components/administrador-components/CambiarClave.jsx'
+import NuevaClave from '../components/administrador-components/NuevaClave.jsx'
 
 const Router = () => {
   return (
@@ -46,6 +47,8 @@ const Router = () => {
                       <Route path='/lista-usuarios' element={ <ListaUsuarios/> }/>
                       <Route path='/lista-docentes' element={ <ListaDocentes/> }/>
                       <Route path='/cambiar-clave' element={ <CambiarClave/> }/>
+                      <Route path='/nueva-clave' element={ <NuevaClave/> }/>
+                      
 
                     </Route>
 

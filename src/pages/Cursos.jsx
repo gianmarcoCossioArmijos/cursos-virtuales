@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 import { useDispatch } from "react-redux"
 import { hidde } from '../store/menuSlice.js'
-
 import { useCursos } from '../hooks/useCursos.js'
+
 import { FaShoppingCart } from "react-icons/fa";
 
 const Cursos = () => {

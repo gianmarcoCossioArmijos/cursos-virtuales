@@ -48,9 +48,9 @@ const PrecioCursos = () => {
                 return (
                     <div key={curso.id} className='py-1 flex justify-between text-md'>
 
-                            <h3>{curso.curso}</h3>
+                            <h3 className='w-4/6'>{curso.curso}</h3>
 
-                            <span className='font-bold'>{curso.precio}</span>
+                            <span className='w-1/6 text-end font-bold'>{curso.precio}</span>
 
                             <button
                             onClick={() => handleClick(curso.id)}

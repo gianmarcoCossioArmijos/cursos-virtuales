@@ -206,6 +206,20 @@ export const useUsuarios = () => {
         }
     }
 
+    const nuevaClave = async(id, clave) => {
+         
+        try {
+            
+            const ref = doc(reference, id);
+            await updateDoc(ref, {clave : clave});
+
+            return clave;
+        } catch (error) {
+
+            console.log(error);
+        }
+    }
+
     return {
         crearUsuario,
         iniciarSesion,
@@ -215,6 +229,7 @@ export const useUsuarios = () => {
         reportarUsuarios,
         eliminarUsuario,
         registrarCompra,
-        cambiarClave
+        cambiarClave,
+        nuevaClave
     }
 }
