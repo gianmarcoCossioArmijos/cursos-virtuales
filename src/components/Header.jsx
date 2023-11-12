@@ -65,7 +65,7 @@ const Header = () => {
                   className='w-9 h-9 m-auto p-1 hover:bg-white/10 rounded-md'/>
 
             <img
-                src="https://i.postimg.cc/pXyvPrSd/bikut.png"
+                src="https://i.postimg.cc/RCsgk9Gt/logo-BIKUT.png"
                 className='h-6 m-auto'
                 alt="logo" />
 
