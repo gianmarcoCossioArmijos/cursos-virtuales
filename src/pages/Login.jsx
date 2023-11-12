@@ -65,7 +65,7 @@ const Login = () => {
     <div className='w-full min-h-screen flex flex-col gap-12 bg-gradient-to-b from-black/0 to-black/40'>
 
         <h4 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto pt-10 pb-4 text-3xl text-center'>
-            <strong>Iniciar Sesion</strong>
+            <strong>Nagkamtae</strong>
         </h4>
 
         <form
@@ -98,18 +98,18 @@ const Login = () => {
 
             <input
                 type="submit"
-                value="Ingresar"
+                value="Wayata"
                 className='w-full h-fit mx-auto mt-6 p-3 flex justify-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500 font-bold'
                 />
 
         </form>
 
         <span className='w-full md:w-2/3 lg:w-2/5 md:mx-auto px-6 flex gap-2 text-center'>
-          ¿Aun no estas registrado?
+          ¿Eke agatmatsumek?
           <Link
               className='text-yellow-500 font-bold'
               to="/registrar">
-            Registrate
+            Agatmamjata
           </Link>
         </span>
 

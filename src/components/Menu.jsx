@@ -13,19 +13,19 @@ const Menu = () => {
         <Link
             to="/"
             className='w-[170px] h-fit p-3 mt-20 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
-          Inicio
+          Nagkabau
         </Link>
 
         <Link
             to="/cursos"
             className='w-[170px] h-fit p-3 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
-          Cursos
+          Tu juwaji
         </Link>
 
         <Link
             to="/registrar"
             className='w-[170px] h-fit p-3 mb-20 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md'>
-          Registrarme
+          Agatmamtae
         </Link>
 
     </div>

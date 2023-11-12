@@ -89,7 +89,7 @@ const Cursos = () => {
                                 onClick={() => handleClick(curso.curso)}
                                 className='w-full mx-auto p-2 flex justify-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500'>
                                 <FaShoppingCart className='self-center'/>
-                                Comprar
+                                Sumaktajae
                             </button>
 
                         </div>

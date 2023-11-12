@@ -44,12 +44,12 @@ const Home = () => {
 
             <div className='w-full md:w-2/5 md:m-auto flex flex-col gap-4'>
                 <h2 className='text-3xl text-center'>
-                    <strong>Suscribete</strong> ahora y toma tus primeras <strong>clases gratis</strong>
+                    <strong>Agatmamjata</strong> yabai ame dekatkau <strong>wainkaumnunuig</strong>
                 </h2>
 
                 <Link to="/registrar" className='w-2/3 mx-auto p-3 rounded-md bg-red-600 hover:bg-red-700 text-xl'>
                     <button className='w-full text-center'>
-                        Registrarme
+                        Agatmamjata
                     </button>
                 </Link>
                 </div>
@@ -60,13 +60,13 @@ const Home = () => {
 
             <div className='w-full md:w-2/5 flex flex-col gap-4'>
                 <h3 className='font-bold text-yellow-500 text-2xl '>
-                    Se el profesional que deseas ser
+                    Yacha atag tabaujum
                 </h3>
 
                 <span className='border'></span>
 
                 <p className='text-lg'>
-                    Potenciamos tus habilidades con las mejores herramientas. Aprende habilidades demandadas, a tu propio ritmo y tiempo. 
+                    Iman ame setakchau pegkeg unuimamu dekamame, ame dekapmamsam agkan pujusam unuimagta.
                 </p>
             </div>
 
@@ -81,13 +81,13 @@ const Home = () => {
 
             <div className='w-full md:w-2/4 lg:w-2/5 flex flex-col gap-4'>
                 <h3 className='flex gap-2 font-bold text-yellow-500 text-2xl'>
-                    Tenemos lo que estas buscando
+                    Ajutmamui ame egamu
                 </h3>
 
                 <span className='border'></span>
 
                 <p className='text-lg'>
-                    Aprende a manejar las herramientas que todo profesional competente debe saber, conoceras desde bases TICs hasta lo mas avanzado.     
+                    Unuimamu pegkeg takamu waji ashi unuimatjamu. Iman ata dekamu, dekamuahi inagnasam imananu TIC's tuwi jejagji nunu.
                 </p>
 
                 <ul className='text-sm'>
@@ -103,7 +103,7 @@ const Home = () => {
 
                 <Link to="/cursos">
                     <button className='w-full mx-auto p-3 rounded-md bg-red-600 hover:bg-red-700 text-xl'>
-                        Explorar Cursos
+                        Wainkame augtai aidau
                     </button>
                 </Link>
             </div>
