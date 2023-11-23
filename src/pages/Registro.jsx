@@ -19,7 +19,7 @@ const Registro = () => {
         sesion: crypto.randomUUID(),
         cursos:
             {
-                "Entorno básico de Excel" : "NI6kjI1pLIk"
+                "Shig Kaunaugme" : "w1FBaFEUhT4"
             }
     });
 

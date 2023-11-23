@@ -20,13 +20,13 @@ const LogoutButtons = () => {
         <button
             onClick={handleClick}
             className='h-fit px-3 py-2 self-center bg-yellow-600 hover:bg-yellow-500 rounded-md text-sm'>
-            Salir
+            Jinkita
         </button>
 
         <Link
             to="/menu"
             className='h-fit px-3 py-2 self-center bg-white/10 hover:bg-white/20 rounded-md text-sm'>
-            Mis Cursos
+              Augtae
         </Link>
     </>
   )
