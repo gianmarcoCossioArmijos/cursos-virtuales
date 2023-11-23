@@ -58,7 +58,7 @@ const Registro = () => {
                 sesion: crypto.randomUUID(),
                 cursos:
                     {
-                        "Entorno básico de Excel" : "NI6kjI1pLIk"
+                        "Shig Kaunaugme" : "w1FBaFEUhT4"
                     },
             })
         } else {
@@ -74,7 +74,7 @@ const Registro = () => {
                 sesion: crypto.randomUUID(),
                 cursos:
                     {
-                        "Entorno básico de Excel" : "NI6kjI1pLIk"
+                        "Shig Kaunaugme" : "w1FBaFEUhT4"
                     }
             })
             
@@ -87,7 +87,7 @@ const Registro = () => {
     <div className='w-full min-h-screen flex flex-col gap-10 bg-gradient-to-b from-black/0 to-black/40'>
 
         <h4 className='w-full md:w-2/3 lg:w-2/5 md:mx-auto pt-10 pb-4 text-3xl text-center'>
-            <strong>Suscribete</strong> ahora y toma tus primeras <strong>clases gratis</strong>
+            <strong>Agatmamjata</strong> yabai ame dekatkau <strong>wainkaumnunuig</strong>
         </h4>
 
         <form
@@ -168,7 +168,7 @@ const Registro = () => {
 
             <input
                 type="submit"
-                value="Registrar"
+                value="Agatmamjata"
                 className='w-full h-fit mx-auto my-6 p-3 flex justify-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500 font-bold'
                 />
 
